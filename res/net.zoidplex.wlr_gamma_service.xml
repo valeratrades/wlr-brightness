@@ -33,4 +33,18 @@
                         <arg name="current_value" direction="out" type="i"/>
                 </method>
 	</interface>
+	<interface name="net.zoidplex.wlr_gamma_service.gamma">
+		<method name="set">
+			<arg name="temperature" direction="in" type="i"/>
+			<arg name="brightness" direction="in" type="d"/>
+			<arg name="current_temperature" direction="out" type="i"/>
+			<arg name="current_brightness" direction="out" type="d"/>
+		</method>
+		<method name="adjust">
+			<arg name="temperature_delta" direction="in" type="i"/>
+			<arg name="brightness_delta" direction="in" type="d"/>
+			<arg name="current_temperature" direction="out" type="i"/>
+			<arg name="current_brightness" direction="out" type="d"/>
+		</method>
+	</interface>
 </node>
